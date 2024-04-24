@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Shared Style */
+
+*{
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+.btn-primary{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Header Style */
+
+header{
+    padding: 50px 240px;
+    background-color: rgba(255, 144, 14, 0.10);;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-title{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav > ul{
+    list-style: none;
+    display: flex;
+}
+nav li{
+    margin-right: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Banner Style */
+
+.banner-title{
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 18px;
+    font-weight: 400;
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner img{
+   width: 100%;
+   
+}
+
+/* quick list styles */
+
+.quick-list-section{
+    display: flex;
+    padding: 30px 300px;
+    max-width: 1920px;
+}
+
+.quick-list-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    
+}
+
+.quick-list-content{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quick-list-title{
+    font-size: 45px;
+    font-weight: 500;
+    color: #727272;
+}
+.our{
+    color: #131313;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.quick-list-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #727272;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}

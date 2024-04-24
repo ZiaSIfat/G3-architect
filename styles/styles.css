@@ -69,25 +69,28 @@ nav li a{
 
 /* quick list styles */
 
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
 .quick-list-section{
     display: flex;
-    padding: 30px 300px;
-    max-width: 1920px;
+    align-items: center;
+
+    
 }
 
 .quick-list-img{
+    padding-left: 100px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    gap: 24px;
     
 }
 
 .quick-list-content{
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 .quick-list-title{
     font-size: 45px;
@@ -110,19 +113,33 @@ nav li a{
 
 
 /* Responsive Styles */
+/* small devices */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    nav{
+    nav,
+    .quick-list-section
+    {
         flex-direction: column;
     }
+    .quick-list-img{
+        grid-template-columns:1fr;
+        padding-left: 20px;
+    }
 }
+
+/* medium devices */
 @media screen and (min-width:576px) and (max-width:960px) {
     header{
         padding: 50px;
     }
-    nav{
+    nav,
+    .quick-list-section
+    {
         flex-direction: column;
+    }
+    .quick-list-img{
+        padding-left: 10px;
     }
 }
